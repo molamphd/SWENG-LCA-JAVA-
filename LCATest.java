@@ -18,9 +18,9 @@ class LCATest {
         tree.root.right.left = new Node(6); 
         tree.root.right.right = new Node(7);
         
-       int expectedResult = 2;
+       int expectedResult = 3;
   
-       assertEquals(expectedResult, tree.findLCA(4,5));
+       assertEquals(expectedResult, tree.findLCA(3,7));
 
     }
     
@@ -54,9 +54,10 @@ class LCATest {
         tree.root.right.left = new Node(6); 
         tree.root.right.right = new Node(7);
         
-       int expectedResult = 1;
+        
+       int expectedResult = 2;
   
-       assertEquals(expectedResult, tree.findLCA(3,4));
+       assertEquals(expectedResult, tree.findLCA(2,5));
 
     }
     
@@ -72,9 +73,9 @@ class LCATest {
         tree.root.right.left = new Node(6); 
         tree.root.right.right = new Node(7);
         
-       int expectedResult = 2;
+       int expectedResult = 1;
   
-       assertEquals(expectedResult, tree.findLCA(2,4));
+       assertEquals(expectedResult, tree.findLCA(1,2));
 
     }
     
